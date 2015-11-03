@@ -3,9 +3,16 @@
   "version": "1.0.0",
   "description": "Termperatura",
   "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.13.3",
+    "ejs": "*",
+    "body-parser": "~1.12.2",
+    "express-ejs-layouts": "~2.0.0"
+  },
   "scripts": {
     "test": "nodejs index.js",
-    "view": "open http://10.6.128.88:8080"
+    "view": "open http://10.6.128.10:8080/"
   },
   "repository": {
     "type": "git",
