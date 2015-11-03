@@ -1,48 +1,20 @@
 {
-  "name": "temperatureconverter",
-  "version": "0.0.1",
-  "description": "conversor de temperatura",
-  "main": "temperature.js",
+  "name": "Temperatura",
+  "version": "1.0.0",
+  "description": "Termperatura",
+  "main": "index.js",
   "scripts": {
-    "test": "node static-server"
-  },
-  "scripts": {
-    "Karma": "./node_modules/karma/bin/karma start karma.conf.js --single-run"
+    "test": "nodejs index.js",
+    "view": "open http://10.6.128.88:8080"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alu0100713435/STW_P5.git"
+    "url": "https://github.com/alu0100713435/STW_P6.git"
   },
-  "keywords": [
-    "regexp"
-  ],
-  "author": "Noel Padron Diaz",
+  "author": "Noel Padron",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alu0100713435/STW_P5/issues"
+    "url": "https://github.com/alu0100713435/STW_P6/issues"
   },
-  "homepage": "https://github.com/alu0100713435/STW_P5#readme",
-  "dependencies": {},
-  "devDependencies": {
-    "chai": "*",
-    "del": "^2.0.2",
-    "gulp": "^3.9.0",
-    "gulp-concat": "^2.6.0",
-    "gulp-minify-css": "^1.2.1",
-    "gulp-minify-html": "^1.0.4",
-    "gulp-mocha": "*",
-    "gulp-uglify": "^1.4.1",
-    "gulp-util": "^3.0.6",
-    "karma": "~0.12",
-    "karma-chrome-launcher": "*",
-    "karma-firefox-launcher": "*",
-    "karma-html2js-preprocessor": "*",
-    "karma-mocha": "^0.2.0",
-    "mocha": "*",
-    "karma-chai": "*",
-    "node-static": "~0.7.6",
-    "bower": "*",
-    "express": "*",
-    "path": "*"
-  }
+  "homepage": "https://github.com/alu0100713435/STW_P6"
 }
