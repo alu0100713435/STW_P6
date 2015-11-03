@@ -5,7 +5,7 @@ var app = express()
 var path = require('path');
 
 // view engine setup
-app.set('views', path.join(__dirname, 'view'));
+app.set('view', path.join(__dirname, 'view'));
 // set the view engine to ejs
 app.set('view engine', 'ejs'); // http://expressjs.com/api.html#app.set
 
