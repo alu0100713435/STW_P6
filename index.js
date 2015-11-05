@@ -4,6 +4,8 @@ var app = express()
 // https://nodejs.org/api/path.html
 var path = require('path');
 
+var Temperatura = require("views/temperature.js");
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 // set the view engine to ejs
@@ -46,8 +48,11 @@ app.get('/', function(req, res){
 // As explained above, usage of 'body-parser' means
 // that `req.body` will be filled in with the form elements
 app.post('/', function(req, res){
-  var userName = req.body.userName;
-  res.render('greet', {userName: userName, title: 'greet'});
+  var temperature = new Temperatura();
+  temperature.inicializador(req.body.original);
+
+  var result = temperature.calculate();
+  res.render('res', {RES: result});
 });
 
 app.listen(app.get('port'), function() {

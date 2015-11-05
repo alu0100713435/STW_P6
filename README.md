@@ -2,7 +2,7 @@
 ==============
 
 
-Pruebas con karma, travis, mas webworker.
+Aplicacion con ExpressJs.
 
 ## Enlace al conversor con express en [iaas.ull.es](iaas.ull.es) ##
 
