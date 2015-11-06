@@ -21,8 +21,7 @@ Temperatura.prototype.far = function(){
     return (this.valor.toFixed(1)+" Celsius");
 }
 
-function calculate() {
-  var temp = original.value;
+Temperatura.prototype.calculate = function(temp) {
   var regexp = /(^[-+]?\d+(?:\.\d*)?)(?:[eE]?([-+]?\d+))?\s*([cCfF])/;
   var m = temp.match(regexp);
 

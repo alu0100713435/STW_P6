@@ -41,7 +41,7 @@ app.get('/', function(req, res){
   // The form's action is '/' and its method is 'POST',
   // so the `app.post('/', ...` route will receive the
   // result of our form
-  res.render('index', { title: "form"});
+  res.render('index');
 });
 
 // This route receives the posted form.
@@ -49,10 +49,8 @@ app.get('/', function(req, res){
 // that `req.body` will be filled in with the form elements
 app.post('/', function(req, res){
   var temperature = new Temperatura();
-  temperature.inicializador(req.body.original);
-
-  var result = temperature.calculate();
-  res.render('res', {RES: result});
+  var result = temperature.calculate(req.body.original);
+  res.render('index', {resultado: result, title: 'index'});
 });
 
 app.listen(app.get('port'), function() {
