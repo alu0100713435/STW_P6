@@ -47,10 +47,10 @@ Temperatura.prototype.calculate = function(temp) {
         var type = m[3];
 
         if (type == 'c' || type == 'C') {
-            converted.innerHTML = t.celsius();
+            return (t.celsius());
         }
         else {
-            converted.innerHTML = t.far();
+            return (t.far());
         }
     }
       
@@ -59,10 +59,10 @@ Temperatura.prototype.calculate = function(temp) {
         var t = new Temperatura(num,m[3])
         
         if (type == 'c' || type == 'C') {
-            converted.innerHTML = t.celsius();
+            return (t.celsius());
         }
         else{
-            converted.innerHTML = t.far();
+            return (t.far());
         }
     }
     
