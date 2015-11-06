@@ -1,4 +1,4 @@
-/*"use strict"; // Use ECMAScript 5 strict mode in browsers that support it
+"use strict";
 
 function Medida(valor, tipo){
     this.valor = valor;
@@ -72,8 +72,8 @@ Temperatura.prototype.calculate = function(temp) {
   }
 }
 
-module.exports = Temperatura;*/
-
+module.exports = Temperatura;
+/*
 "use strict";
 
 function Medida () {
@@ -126,4 +126,4 @@ Temperatura.prototype.calculate = function(){
 }
 
 
-module.exports = Temperatura;
+module.exports = Temperatura;*/
