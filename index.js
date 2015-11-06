@@ -41,7 +41,7 @@ app.get('/', function(req, res){
   // The form's action is '/' and its method is 'POST',
   // so the `app.post('/', ...` route will receive the
   // result of our form
-  res.render('layout');
+  res.render('index');
 });
 
 // This route receives the posted form.
