@@ -68,7 +68,7 @@ Temperatura.prototype.calculate = function(temp) {
     
   }
   else {
-    converted.innerHTML = "ERROR! Prueba con algo como esto '-4.2C' ";
+    return ("ERROR! Prueba con algo como esto '-4.2C' ");
   }
 }
 
