@@ -50,7 +50,7 @@ app.get('/', function(req, res){
 app.post('/', function(req, res){
   var temperature = new Temperatura();
   var result = temperature.calculate(req.body.original);
-  res.render('index', {resultado: result, title: 'index'});
+  res.render('index', {result: result, title: 'index'});
 });
 
 app.listen(app.get('port'), function() {
