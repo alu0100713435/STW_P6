@@ -49,9 +49,9 @@ app.get('/', function(req, res){
 // that `req.body` will be filled in with the form elements
 app.post('/', function(req, res){
   var temperature = new Temperatura();
-  temperature.inicializar(req.body.temper);
+  var result = temperature.calculate(req.body.temper);
   
-  var result = temperature.calculate();
+  //var result = temperature.calculate();
   res.render('res', {result: result, title: 'res'});
 });
 
