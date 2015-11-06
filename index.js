@@ -51,7 +51,7 @@ app.post('/', function(req, res){
   var temperature = new Temperatura();
   temperature.calculate(req.body.temper);
   
-  var result = inicial.conversor();
+  var result = temperature.conversor();
   res.render('res', {result: result, title: 'res'});
 });
 
