@@ -71,3 +71,5 @@ Temperatura.prototype.calculate = function(temp) {
     converted.innerHTML = "ERROR! Prueba con algo como esto '-4.2C' ";
   }
 }
+
+module.exports = Temperatura;
