@@ -108,7 +108,7 @@ Temperatura.prototype.inicializar = function(temp){
 }
 
 //Conversor
-Temperatura.prototype.conversor = function(){
+Temperatura.prototype.calculate = function(){
 
   if(this.get_valor() === undefined || this.get_tipo() === undefined){
     return ("ERROR! Prueba con algo como esto '-4.2C'");
