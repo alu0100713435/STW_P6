@@ -4,7 +4,7 @@ var app = express()
 // https://nodejs.org/api/path.html
 var path = require('path');
 
-var Temperatura = require("views/temperature.js");
+var Temperatura = require("/views/temperature.js");
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
